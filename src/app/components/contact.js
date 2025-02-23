@@ -6,7 +6,7 @@ export default function ContactMe() {
         
         {/* Contact Form */}
         <div className="flex flex-col">
-          <h2 className="text-3xl font-bold text-[#FFC107]">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-yellow-600">Get in Touch</h2>
           <p className="mt-3 text-gray-300">
             Have questions or ready to plan your dream Quinceañera? Send us a message!
           </p>

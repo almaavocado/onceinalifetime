@@ -66,7 +66,7 @@ export default function Pricing() {
   return (
     <div id="pricing" className="relative isolate bg-[#0F1B26] px-6 py-8 sm:py-10 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-base font-semibold text-white">Pricing</h2>
+       <h2 className="text-base font-semibold text-yellow-600">Pricing</h2>
         <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
           Once in a Lifetime Quinceañera Packages
         </p>
