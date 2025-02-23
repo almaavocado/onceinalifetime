@@ -21,9 +21,11 @@ export default function VideoPage() {
       </div>
 
       {/* Call-to-Action */}
-      <button className="mt-6 px-6 py-3 rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]">
-        Book a Free Consultation
-      </button>
+      <a href="mailto:laztrinidad87@gmail.com" className="mt-6 px-6 py-3">
+        <button className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]">
+          Book a Free Consultation
+        </button>
+      </a>
 
 
 
