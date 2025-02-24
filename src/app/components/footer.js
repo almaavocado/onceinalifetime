@@ -4,7 +4,7 @@ export function Footer() {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="/assets/logo.png" className="h-16" alt="OIALQ Logo" />
+                        <img src="https://onceinalifetime.s3.us-west-1.amazonaws.com/logo.png" className="h-16" alt="OIALQ Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
                     </a>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">

@@ -16,7 +16,7 @@ export default function tempHeader() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <div className="relative bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/assets/hero6.png')" }}>
+        <div className="relative bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('https://onceinalifetime.s3.us-west-1.amazonaws.com/hero6.png')" }}>
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
                     <div className="flex lg:flex-1">
@@ -48,7 +48,7 @@ export default function tempHeader() {
                         <div className="flex items-center justify-between">
                             <a href="#home" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Once in a Lifetime Quinceañera</span>
-                                <img alt="" src="/assets/title-Quince2.svg" className="h-16 w-auto" />
+                                <img alt="" src="https://onceinalifetime.s3.us-west-1.amazonaws.com/title-Quince2.svg" className="h-16 w-auto" />
                             </a>
                             <button
                                 type="button"

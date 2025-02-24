@@ -49,7 +49,7 @@ export default function FounderMessage() {
           className="flex justify-center lg:justify-end w-full lg:w-1/2"
         >
           <img
-            src="/assets/laz3.png" 
+            src="https://onceinalifetime.s3.us-west-1.amazonaws.com/laz3.png" 
             alt="Founder" 
             className="rounded-xl shadow-lg w-3/4 max-h-[500px] object-cover aspect-[3/4]"
           /> 

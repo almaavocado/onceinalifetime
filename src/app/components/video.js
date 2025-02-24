@@ -15,7 +15,7 @@ export default function VideoPage() {
           className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg aspect-video border-2 border-white/10" 
           controls
         >
-          <source src="assets/OIALQ_video2.mp4" type="video/mp4" />
+          <source src="https://onceinalifetime.s3.us-west-1.amazonaws.com/OIALQ_Video2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
