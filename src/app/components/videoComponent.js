@@ -2,9 +2,20 @@ export default function VideoHero() {
     return (
       <div id="about" className="relative h-[600px] w-full">
         {/* Video */}
-        <video className="absolute inset-0 w-full h-full object-cover blur-sm" autoPlay loop muted>
+        <video 
+          className="absolute inset-0 w-full h-full object-cover blur-sm" 
+          autoPlay 
+          loop 
+          muted
+          playsInline
+          controls={false}
+          preload="auto"
+          webkit-playsinline="true"
+        >
           <source src="https://onceinalifetime.s3.us-west-1.amazonaws.com/aboutVideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
+
 
   
         {/* Overlay */}
