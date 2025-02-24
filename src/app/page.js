@@ -1,6 +1,5 @@
 "use client";
 
-import Head from 'next/head';
 import Hero from "./components/hero";
 import Pricing from "./components/pricing";
 import Services from "./components/services";
@@ -9,6 +8,7 @@ import VideoTextComponent from "./components/videoComponent";
 import Video from "./components/video";
 import ContactMe from "./components/contact";
 import { Footer } from "./components/footer";
+import ScrollToTop from "./components/scroll";
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
         <Video />
         <ContactMe />
         <Footer />
+        <ScrollToTop />
       
       </main>
     </>

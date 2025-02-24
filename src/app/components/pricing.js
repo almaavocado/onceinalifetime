@@ -110,9 +110,10 @@ export default function Pricing() {
                 </ul>
               </div>
             </div>
+  
 
             <a
-              href="#"
+              href="mailto:laztrinidad87@gmail.com" 
               className="mt-10 block w-full rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] py-2 text-center text-sm font-semibold text-white hover:bg-[#4FC3F7]"
             >
               Get Started

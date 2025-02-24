@@ -1,39 +1,40 @@
-'use client'
+'use client';
 
 import { useEffect } from 'react';
-import { Ripple, initTWE } from "tw-elements";
 
 export default function ScrollToTop() {
   useEffect(() => {
-    initTWE({ Ripple });
-    
-    const mybutton = document.getElementById("btn-back-to-top");
-    
-    const scrollFunction = () => {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton?.classList.remove("hidden");
-      } else {
-        mybutton?.classList.add("hidden");
-      }
-    };
+    if (typeof window !== "undefined") {
+      import("tw-elements").then((module) => {
+        module.initTWE({ Ripple: {} });
+      });
 
-    const backToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+      const mybutton = document.getElementById("btn-back-to-top");
 
-    // Add event listeners
-    mybutton?.addEventListener("click", backToTop);
-    window.addEventListener("scroll", scrollFunction);
+      const scrollFunction = () => {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton?.classList.remove("hidden");
+        } else {
+          mybutton?.classList.add("hidden");
+        }
+      };
 
-    // Cleanup event listeners
-    return () => {
-      mybutton?.removeEventListener("click", backToTop);
-      window.removeEventListener("scroll", scrollFunction);
-    };
-  }, []); // Empty dependency array means this runs once on mount
+      const backToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+
+      mybutton?.addEventListener("click", backToTop);
+      window.addEventListener("scroll", scrollFunction);
+
+      return () => {
+        mybutton?.removeEventListener("click", backToTop);
+        window.removeEventListener("scroll", scrollFunction);
+      };
+    }
+  }, []);
 
   return (
     <button
