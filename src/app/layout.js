@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -60,9 +61,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
+      <Head>
+        <title>Once in a Lifetime Quinceañera</title>
+        <meta name="description" content="Creating Once in a Lifetime Quinceañera's through Choreography" />
+        <link rel="icon" href="/assets/logo.png" />
+      </Head>
+      <body>{children}</body>
     </html>
   );
 }
