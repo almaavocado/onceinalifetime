@@ -1,7 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/content'
 
 export default function FounderMessage() {
+  const { language } = useLanguage();
+  const t = translations[language].message;
+
   return (
     <section className="relative mt-8 px-6 lg:px-24 bg-[#0F1B26]">
       {/* Smooth Transition Divider */}
@@ -17,27 +22,27 @@ export default function FounderMessage() {
           className="w-full lg:w-1/2 text-center lg:text-left lg:pl-6"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-200 mb-6">
-            A Message From Our Founder
+            {t.title}
           </h2>
 
           <p className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-[#FFD700] via-[#D4AF37] to-[#AE8625] bg-clip-text text-transparent italic mb-5">
-            "Dance has been the heartbeat of my life since childhood."
+            {t.quote}
           </p>
 
           <p className="text-gray-300 text-base lg:text-lg leading-relaxed mb-5">
-            From twirling to "La Quebradora" as a toddler to competing on high school dance teams, dance has always been my passion. While studying psychology in college, a pivotal moment changed my path—when I stepped in to choreograph my cousin's quinceañera. Seeing how dance could transform confidence and create unforgettable moments revealed my true calling.
+            {t.paragraph1}
           </p>
 
           <p className="text-gray-300 text-base lg:text-lg leading-relaxed mb-5">
-            What started as a way to help family and friends quickly became a mission. I discovered that quinceañeras offer the perfect blend of dance, culture, and youth empowerment—helping young people step into their confidence while embracing tradition.
+            {t.paragraph2}
           </p>
 
           <p className="text-gray-300 text-base lg:text-lg leading-relaxed mb-6">
-            At Once in a Lifetime Quinceañera, we don’t just create dances—we create lifelong memories and empower young people to celebrate who they are with pride and joy.
+            {t.paragraph3}
           </p>
 
           <h4 className="text-lg font-bold bg-gradient-to-r from-[#AE8625] to-[#D2AC47] bg-clip-text text-transparent italic">
-            – Lazaro Trinidad
+            {t.signature}
           </h4>
         </motion.div>
 

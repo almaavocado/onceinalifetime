@@ -3,13 +3,16 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/content'
+import { LanguageIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'home', href: '#home' },
+    { name: 'services', href: '#services' },
+    { name: 'about', href: '#about' },
+    { name: 'pricing', href: '#pricing' },
+    { name: 'contact', href: '#contact' },
 ];
 
 const socials = [
@@ -54,8 +57,10 @@ const socials = [
     }
 ];
 
-export default function tempHeader() {
+export default function Hero() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const { language, toggleLanguage } = useLanguage();
+    const t = translations[language];
 
     const handleNavClick = (e, href) => {
         e.preventDefault();
@@ -73,31 +78,40 @@ export default function tempHeader() {
     return (
         <div className="relative bg-cover bg-center min-h-screen lg:bg-[url('https://onceinalifetime.s3.us-west-1.amazonaws.com/hero6.png')] bg-[url('https://onceinalifetime.s3.us-west-1.amazonaws.com/mobile-hero.png')]">
             <header className="absolute inset-x-0 top-0 z-50">
-            <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+                <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
                     <div className="flex lg:flex-1">
                         <a href="#home" className="-m-1.5 p-1.5">
                             <span className="sr-only">Once in a Lifetime Quinceañera</span>
                         </a>
                     </div>
-                    <div className="flex lg:hidden">
+                    
+                    {/* Updated navigation and controls layout */}
+                    <div className="hidden lg:flex lg:gap-x-12 lg:mr-8">
+                        {navigation.map((item) => (
+                            <a key={item.name} href={item.href} className="text-md font-semibold text-white hover:text-[#926AA5]">
+                                {t.navigation[item.name]}
+                            </a>
+                        ))}
+                    </div>
+
+                    <div className="flex items-center gap-6">
+                        <button
+                            onClick={toggleLanguage}
+                            className="text-white hover:text-[#926AA5] transition-colors duration-200 flex items-center gap-2 px-3 py-1 rounded-md border border-white/20"
+                        >
+                            <LanguageIcon className="h-5 w-5" />
+                            <span>{language.toUpperCase()}</span>
+                        </button>
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(true)}
-                            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                            className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                         >
                             <span className="sr-only">Open main menu</span>
                             <Bars3Icon aria-hidden="true" className="size-6" />
                         </button>
                     </div>
-                    <div className="hidden lg:flex lg:gap-x-12">
-                        {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-md font-semibold text-white hover:text-[#926AA5]">
-                                {item.name}
-                            </a>
-                        ))}
-                    </div>
                 </nav>
-
 
                 <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                     <div className="fixed inset-0 z-50 bg-black bg-opacity-50" />
@@ -130,7 +144,7 @@ export default function tempHeader() {
                                             onClick={(e) => handleNavClick(e, item.href)}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-[#0C2C3B] transition-colors duration-200"
                                         >
-                                            {item.name}
+                                            {t.navigation[item.name]}
                                         </a>
                                     ))}
                                 </div>
@@ -168,14 +182,14 @@ export default function tempHeader() {
                         />
                     </div>
                     <p className="text-lg leading-7 sm:text-xl max-w-2xl mx-auto">
-                        Empowering young girls by creating extraordinary, personalized experiences that honor their heritage, build confidence, and celebrate their transition into womanhood through the art of waltz and surprise dance.
+                        {t.hero.description}
                     </p>
                     <div className="mt-10">
                         <a
                             href="#pricing"
                             className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]"
                         >
-                            Plan Your Dream Quinceañera
+                            {t.hero.cta}
                         </a>
                     </div>
                 </div>
@@ -184,3 +198,4 @@ export default function tempHeader() {
         </div>
     );
 }
+

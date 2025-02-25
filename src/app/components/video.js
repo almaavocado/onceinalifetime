@@ -1,39 +1,41 @@
+'use client'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/content'
+
 export default function VideoPage() {
-  return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center p-6 text-white">
-      {/* Title Section */}
-      <h1 className="text-xl md:text-2xl font-bold mb-4 text-center">
-        Celebrate Your Quinceañera with Stunning Choreography
-      </h1>
-      <p className="text-sm md:text-lg italic text-gray-300 text-center max-w-2xl">
-        Make your big day unforgettable with breathtaking dances tailored just for you.
-      </p>
+    const { language } = useLanguage();
+    const t = translations[language].video;
 
-      {/* Video Container */}
-      <div className="w-full max-w-4xl mt-8">
-        <video 
-          className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg aspect-video border-2 border-white/10" 
-          controls
-        >
-          <source src="https://onceinalifetime.s3.us-west-1.amazonaws.com/OIALQ_Video2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    return (
+        <div className="w-full min-h-screen flex flex-col justify-center items-center p-6 text-white">
+            <h1 className="text-xl md:text-2xl font-bold mb-4 text-center">
+                {t.title}
+            </h1>
+            <p className="text-sm md:text-lg italic text-gray-300 text-center max-w-2xl">
+                {t.subtitle}
+            </p>
 
-      {/* Call-to-Action */}
-      <a href="mailto:laztrinidad87@gmail.com" className="mt-6 px-6 py-3">
-        <button className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]">
-          Book a Free Consultation
-        </button>
-      </a>
+            {/* Video Container */}
+            <div className="w-full max-w-4xl mt-8">
+                <video 
+                    className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg aspect-video border-2 border-white/10" 
+                    controls
+                >
+                    <source src="https://onceinalifetime.s3.us-west-1.amazonaws.com/OIALQ_Video2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
+            <a href="mailto:laztrinidad87@gmail.com" className="mt-6 px-6 py-3">
+                <button className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]">
+                    {t.cta}
+                </button>
+            </a>
 
-
-      {/* Testimonial or Divider */}
-      <div className="border-t border-white/10 my-12 mx-auto w-3/4"></div>
-      <p className="text-center text-gray-400 italic max-w-lg">
-        "The choreography made my Quinceañera magical! I felt confident and beautiful."
-      </p>
-    </div>
-  );
+            <div className="border-t border-white/10 my-12 mx-auto w-3/4"></div>
+            <p className="text-center text-gray-400 italic max-w-lg">
+                {t.testimonial}
+            </p>
+        </div>
+    );
 }

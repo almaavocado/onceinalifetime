@@ -1,4 +1,7 @@
+'use client'
 import { SparklesIcon } from '@heroicons/react/24/outline'
+import { useLanguage } from '../context/LanguageContext'
+import { translations } from '../translations/content'
 
 const packages = [
   {
@@ -63,15 +66,18 @@ const packages = [
 ]
 
 export default function Pricing() {
+  const { language } = useLanguage();
+  const t = translations[language].pricing;
+
   return (
     <div id="pricing" className="relative isolate bg-[#0F1B26] px-6 py-8 sm:py-10 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
-       <h2 className="text-base font-semibold text-yellow-600">Pricing</h2>
+        <h2 className="text-base font-semibold text-yellow-600">{t.title}</h2>
         <p className="mt-2 text-4xl text-white font-bold tracking-tight sm:text-5xl">
-          Once in a Lifetime Quinceañera Packages
+          {t.subtitle}
         </p>
         <p className="mt-6 text-white text-lg leading-8">
-          Choose the perfect package to make your event unforgettable.
+          {t.description}
         </p>
       </div>
 
@@ -116,13 +122,13 @@ export default function Pricing() {
               href="mailto:laztrinidad87@gmail.com" 
               className="mt-10 block w-full rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] py-2 text-center text-sm font-semibold text-white hover:bg-[#4FC3F7]"
             >
-              Get Started
+              {t.getStarted}
             </a>
           </div>
         ))}
       </div>
 
-      <p className="mt-10 text-center text-lg">Contact us today for your free consultation and more details!</p>
+      <p className="mt-10 text-center text-lg">{t.contact}</p>
 
       {/* Subtle Divider to Improve Section Break */}
       <div className="border-t border-white/10 my-16 mx-auto w-3/4"></div>
