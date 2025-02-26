@@ -5,7 +5,6 @@
 :root {
   --background: #0F1B26;
   --foreground: #171717;
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,4 +26,32 @@ body {
   font-weight: 300 800;
   font-display: swap;
   src: url("/fonts/Oswald.woff2") format("woff2");
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(30px, -50px);
+  }
+  66% {
+    transform: translate(-20px, 20px);
+  }
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
 }
