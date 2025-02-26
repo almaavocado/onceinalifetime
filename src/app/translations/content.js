@@ -8,7 +8,7 @@ export const translations = {
             contact: 'Contact'
         },
         hero: {
-            description: 'Empowering young girls by creating extraordinary, personalized experiences that honor their heritage, build confidence, and celebrate their transition into womanhood through the art of waltz and surprise dance.',
+            description: 'Empowering young girls to become the best version of themselves by creating extraordinary and personalized experiences that honor their heritage and celebrate their transition into womanhood through the art of waltz and surprise dance. ',
             cta: 'Plan Your Dream Quinceañera'
         },
         services: {
@@ -17,15 +17,15 @@ export const translations = {
             items: {
                 choreography: {
                     name: 'Choreography',
-                    description: 'Custom choreography for the Quinceañera, chambelanes, and family for key dances such as the waltz, entrance, and surprise dance.'
+                    description: 'Custom choreography for the Quinceañera, chambelanes, and family for key dances such as the entrance, main waltz, and surprise dance.'
                 },
                 coordination: {
                     name: 'Coordination',
-                    description: 'Directing and giving instructions to ensure each part of the program runs smoothly, from coronación to última muñeca.'
+                    description: 'Producing and directing to ensure each part of the program runs smoothly, from el brindis to sound and lighting.'
                 },
                 additional: {
                     name: 'Additional Services',
-                    description: 'Weekly practices, collaboration with vendors, music mixing, wardrobe advice, and day-of MC services.'
+                    description: 'Weekly practices, collaboration with vendors, music mixing, wardrobe advice,  photoshoot director, and day-of MC services.'
                 }
             }
         },
@@ -35,7 +35,8 @@ export const translations = {
             paragraph1: 'From twirling to "La Quebradora" as a toddler to competing on high school dance teams, dance has always been my passion. While studying psychology in college, a pivotal moment changed my path—when I stepped in to choreograph my cousins quinceañera. Seeing how dance could transform confidence and create unforgettable moments revealed my true calling.',
             paragraph2: 'What started as a way to help family and friends quickly became a mission. I discovered that quinceañeras offer the perfect blend of dance, culture, and youth empowerment—helping young people step into their confidence while embracing tradition.',
             paragraph3: 'At Once in a Lifetime Quinceañera, we dont just create dances—we create lifelong memories and empower young people to celebrate who they are with pride and joy.',
-            signature: '– Lazaro Trinidad'
+            signature: '– Lazaro Trinidad',
+            quote2: '“Be you, Do you, Love you!”'
         },
         pricing: {
             title: 'Pricing',

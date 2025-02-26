@@ -44,6 +44,10 @@ export default function FounderMessage() {
           <h4 className="text-lg font-bold bg-gradient-to-r from-[#AE8625] to-[#D2AC47] bg-clip-text text-transparent italic">
             {t.signature}
           </h4>
+
+          <h4 className="text-lg font-bold bg-gradient-to-r from-[#AE8625] to-[#D2AC47] bg-clip-text text-transparent italic">
+            {t.quote2}
+          </h4>
         </motion.div>
 
         {/* Image Section */}

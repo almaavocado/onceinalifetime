@@ -7,7 +7,7 @@ export default function VideoPage() {
     const t = translations[language].video;
 
     return (
-        <div className="w-full min-h-screen flex flex-col justify-center items-center p-6 text-white">
+        <div className="w-full min-h-screen flex flex-col justify-center items-center p-6 text-white mt-8">
             <h1 className="text-xl md:text-2xl font-bold mb-4 text-center">
                 {t.title}
             </h1>
@@ -20,6 +20,7 @@ export default function VideoPage() {
                 <video 
                     className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg aspect-video border-2 border-white/10" 
                     controls
+                    poster="https://onceinalifetime.s3.us-west-1.amazonaws.com/oialq_thumbnail.png"
                 >
                     <source src="https://onceinalifetime.s3.us-west-1.amazonaws.com/OIALQ_Video2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

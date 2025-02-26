@@ -31,6 +31,7 @@ export default function VideoHero() {
                     {t.description}
                 </p>
             </div>
+    
         </div>
     );
 }
