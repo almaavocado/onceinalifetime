@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <main>
         <Hero />
+        <Video />
         <Services />
         <VideoTextComponent />
         <FounderMessage />
         <Pricing />
-        <Video />
         <ContactMe />
         <Footer />
         <ScrollToTop />
