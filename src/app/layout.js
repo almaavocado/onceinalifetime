@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Once In a Lifetime Quiñcenera",
-  description: "Once In a Lifetime Quiñcenera",
+  title: "Once In a Lifetime Quinceañera",
+  description: "Once In a Lifetime Quinceañera",
   icons: {
-    icon: "./assets/logo.png",
+    icon: ["/assets/butterfly.png"], // Ensure this path is correct
   },
   openGraph: {
-    title: "Once In a Lifetime Quiñcenera",
-    description: "Once In a Lifetime Quiñcenera",
+    title: "Once In a Lifetime Quinceañera",
+    description: "Once In a Lifetime Quinceañera",
     url: "https://once-in-a-lifetime-quincenera.vercel.app",
-    siteName: "Once In a Lifetime Quiñcenera",
+    siteName: "Once In a Lifetime Quinceañera",
     images: [
       {
-        url: "./assets/logo.png",
+        url: "/assets/logo.png",
         width: 1200,
         height: 630,
       },
@@ -36,10 +36,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Once In a Lifetime Quiñcenera",
-    description: "Once In a Lifetime Quiñcenera",
+    title: "Once In a Lifetime Quinceañera",
+    description: "Once In a Lifetime Quinceañera",
     creator: "Alma Alvarado",
-    images: ["/logo.png"],
+    images: ["/assets/logo_icon.png"],
   },
   robots: {
     index: true,
@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>Once in a Lifetime Quinceañera</title>
         <meta name="description" content="Creating Once in a Lifetime Quinceañera's through Choreography" />
-        <link rel="icon" href="/assets/logo.png" />
+        <link rel="icon" href="/favicon.ico" /> {/* Ensure this path is correct */}
       </Head>
       <body>
         <LanguageProvider>
