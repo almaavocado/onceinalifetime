@@ -8,7 +8,16 @@ export default function FounderMessage() {
   const t = translations[language].message;
 
   return (
-    <section className="relative mt-8 px-6 lg:px-24 bg-[#0F1B26]">
+    <section className="relative px-6 lg:px-24 bg-[#0F1B26] overflow-hidden">
+      {/* Gradient Spots */}
+      <div className="absolute top-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
+      <div className="absolute top-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+      <div className="inset-x-0 -top-40 -z-10 h-8 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="inset-x-0 -bottom-40 -z-10 h-6 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+
+
       {/* Smooth Transition Divider */}
       <div className="h-16 bg-gradient-to-b from-transparent to-[#0F1B26]"></div>
 

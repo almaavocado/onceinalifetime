@@ -1,7 +1,15 @@
+'use client'
 export default function ContactMe() {
   return (
-    <div id="contact" className="bg-[#0F1B26] text-white py-16 px-6">
-    
+    <div id="contact" className="relative bg-[#0F1B26] text-white py-16 px-6 overflow-hidden">
+      {/* Gradient Spots */}
+      <div className="absolute top-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
+      <div className="absolute top-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+      <div className="inset-x-0 -top-40 -z-10 h-8 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+      <div className="inset-x-0 -bottom-40 -z-10 h-6 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Contact Form */}
@@ -50,7 +58,6 @@ export default function ContactMe() {
             src="https://maps.google.com/maps?q=Los+Angeles,CA&z=13&output=embed"
             allowFullScreen
           ></iframe>
-
         </div>
       </div>
     </div>

@@ -28,7 +28,16 @@ export default function Services() {
     const t = translations[language].services;
 
     return (
-        <div id="services" className="bg-[#0F1B26] py-16">
+        <div id="services" className="relative bg-[#0F1B26] py-16 overflow-hidden">
+            {/* Gradient Spots */}
+            <div className="absolute top-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
+            <div className="absolute top-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+            <div className="inset-x-0 -top-40 -z-10 h-8 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+            <div className="inset-x-0 -bottom-40 -z-10 h-6 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
+
+
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold tracking-tight text-white">{t.title}</h2>
                 <p className="mt-4 text-lg text-gray-300">{t.subtitle}</p>
