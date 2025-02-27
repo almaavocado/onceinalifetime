@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Once In a Lifetime Quinceañera",
-  description: "Once In a Lifetime Quinceañera",
+  description: "Creating Once in a Lifetime Quinceañera's through Choreography",
   icons: {
     icon: ["/assets/butterfly.png"], // Ensure this path is correct
   },
   openGraph: {
     title: "Once In a Lifetime Quinceañera",
-    description: "Once In a Lifetime Quinceañera",
+    description: "Creating Once in a Lifetime Quinceañera's through Choreography",
     url: "https://once-in-a-lifetime-quincenera.vercel.app",
     siteName: "Once In a Lifetime Quinceañera",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Once In a Lifetime Quinceañera",
-    description: "Once In a Lifetime Quinceañera",
+    description: "Creating Once in a Lifetime Quinceañera's through Choreography",
     creator: "Alma Alvarado",
     images: ["/assets/logo_icon.png"],
   },
@@ -65,7 +65,18 @@ export default function RootLayout({ children }) {
       <Head>
         <title>Once in a Lifetime Quinceañera</title>
         <meta name="description" content="Creating Once in a Lifetime Quinceañera's through Choreography" />
-        <link rel="icon" href="/favicon.ico" /> {/* Ensure this path is correct */}
+        <link rel="icon" href="/assets/butterfly.png" /> {/* Ensure this path is correct */}
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Once In a Lifetime Quinceañera" />
+        <meta property="og:description" content="Creating Once in a Lifetime Quinceañera's through Choreography" />
+        <meta property="og:image" content="/assets/logo.png" />
+        <meta property="og:url" content="https://once-in-a-lifetime-quincenera.vercel.app" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Once In a Lifetime Quinceañera" />
+        <meta name="twitter:description" content="Creating Once in a Lifetime Quinceañera's through Choreography" />
+        <meta name="twitter:image" content="/assets/logo_icon.png" />
       </Head>
       <body>
         <LanguageProvider>
