@@ -1,17 +1,23 @@
 'use client'
+
+import { useCallback } from 'react';
+import { SparklesCore } from "./ui/sparkle"; // Ensure you have the correct path to your SparklesCore component
+
 export default function ContactMe() {
   return (
     <div id="contact" className="relative bg-[#0F1B26] text-white py-16 px-6 overflow-hidden">
-      {/* Gradient Spots */}
-      <div className="absolute top-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
-      <div className="absolute top-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
-      <div className="absolute bottom-0 left-0 w-16 h-96 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
-      <div className="absolute bottom-0 right-0 w-16 h-96 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
-      <div className="inset-x-0 -top-40 -z-10 h-8 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
-      <div className="inset-x-0 -bottom-40 -z-10 h-6 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
+      {/* Core component */}
+        <SparklesCore
+        background="transparent"
+        minSize={0.4}
+        maxSize={1}
+        particleDensity={50}
+        className="absolute inset-0 w-full h-full pointer-events-none z-0"
+        particleColor="#C9A0FF" />
+     
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Contact Form */}
         <div className="flex flex-col">
           <h2 className="text-3xl font-bold text-yellow-600">Get in Touch</h2>
@@ -38,23 +44,29 @@ export default function ContactMe() {
               className="w-full p-3 bg-gray-800 rounded-lg border border-gray-600 focus:ring-[#FFC107] focus:border-[#FFC107]"
               required
             ></textarea>
+
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-[#AE8625] to-[#D2AC47] py-3 text-center text-lg font-semibold rounded-lg hover:opacity-90 transition"
+              className="group w-1/2 rounded-lg relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 hover:opacity-90 transition"
             >
-              Send Message
+              <span>
+                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+              </span>
+              <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-800 w-full bg-gradient-to-r from-[#AE8625] to-[#D2AC47] py-3 text-center rounded-lg hover:opacity-90 transition" />
+              <span className="z-10 py-3 text-md font-semibold">Send Message</span>
             </button>
           </form>
         </div>
 
         {/* Map Section */}
-        <div className="mt-8 w-full h-80 rounded-lg overflow-hidden flex justify-center">
+        <div className="relative mt-8 w-full h-80 rounded-lg overflow-hidden flex justify-center">
+          {/* Map */}
           <iframe
             title="OIALQ Location"
             width="100%"
             height="100%"
             loading="lazy"
-            className="rounded-sm"
+            className="relative rounded-lg z-10"
             src="https://maps.google.com/maps?q=Los+Angeles,CA&z=13&output=embed"
             allowFullScreen
           ></iframe>

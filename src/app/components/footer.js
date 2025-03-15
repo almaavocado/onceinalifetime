@@ -1,3 +1,5 @@
+import { SparklesCore } from "./ui/sparkle"; 
+
 export function Footer() {
     const socials = [
         {
@@ -43,7 +45,15 @@ export function Footer() {
 
     return (
         <footer className="bg-[#0F1B26] text-white">
+             <SparklesCore
+              background="transparent"
+              minSize={0.4}
+              maxSize={1}
+              particleDensity={50}
+              className="absolute inset-0 w-full h-full pointer-events-none z-0"
+              particleColor="#C9A0FF" />
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="#home" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="https://onceinalifetime.s3.us-west-1.amazonaws.com/logo.png" 
