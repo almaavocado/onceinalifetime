@@ -7,7 +7,7 @@ export default function VideoHero() {
     const t = translations[language].videoComponent;
 
     return (
-        <div id="about" className="relative h-[600px] w-full">
+        <div id="about" className="relative h-[700px] w-full">
             <video 
                 className="absolute inset-0 w-full h-full object-cover blur-sm" 
                 autoPlay 

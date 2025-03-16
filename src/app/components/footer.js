@@ -44,16 +44,15 @@ export function Footer() {
     ];
 
     return (
-        <footer className="bg-[#0F1B26] text-white">
-             <SparklesCore
+        <div className="relative bg-[#0F1B26] text-white overflow-hidden">
+            <SparklesCore
               background="transparent"
               minSize={0.4}
               maxSize={1}
-              particleDensity={50}
+              particleDensity={15}
               className="absolute inset-0 w-full h-full pointer-events-none z-0"
               particleColor="#C9A0FF" />
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            
+            <div className="relative mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 z-10">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="#home" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="https://onceinalifetime.s3.us-west-1.amazonaws.com/logo.png" 
@@ -62,21 +61,20 @@ export function Footer() {
                     </a>
                     <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                         <li>
-                            <a href="#services" className="hover:underline me-4 md:me-6">Services</a>
+                            <a href="#services" className="hover:underline hover:text-[#926AA5] transition-colors duration-200 me-4 md:me-6">Services</a>
                         </li>
                         <li>
-                            <a href="#about" className="hover:underline me-4 md:me-6">About</a>
+                            <a href="#about" className="hover:underline hover:text-[#926AA5] transition-colors duration-200 me-4 md:me-6">About</a>
                         </li>
                         <li>
-                            <a href="#pricing" className="hover:underline me-4 md:me-6">Pricing</a>
+                            <a href="#packages" className="hover:underline hover:text-[#926AA5] transition-colors duration-200 me-4 md:me-6">Packages</a>
                         </li>
                         <li>
-                            <a href="#contact" className="hover:underline">Contact</a>
+                            <a href="#contact" className="hover:underline hover:text-[#926AA5] transition-colors duration-200">Contact</a>
                         </li>
                     </ul>
                 </div>
 
-                {/* Social Media Icons - Moved above the divider */}
                 {/* Social Media Icons */}
                 <div className="flex justify-center mt-8 space-x-6">
                     {socials.map((item) => (
@@ -85,7 +83,7 @@ export function Footer() {
                             href={item.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+                            className="text-white hover:text-[#926AA5] transition-colors duration-200"
                         >
                             <span className="sr-only">{item.name}</span>
                             <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -95,11 +93,11 @@ export function Footer() {
                 <hr className="my-8 border-gray-200 sm:mx-auto dark:border-gray-700" />
 
                 {/* Copyright and Credits - Improved Layout */}
-                <div className="sm:flex sm:items-center sm:justify-between flex-wrap gap-4">
-                    <span className="text-sm text-gray-500 dark:text-gray-400 block text-center sm:text-left">
+                <div className="sm:flex sm:items-center sm:justify-between flex-wrap gap-4 mb-10">
+                    <span className="text-sm text-gray-500 hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-left">
                         © {new Date().getFullYear()} <a href="#home" className="hover:underline">Once in a Lifetime Quinceañera</a>
                     </span>
-                    <span className="text-sm text-gray-500 dark:text-gray-400 block text-center sm:text-right">
+                    <span className="text-sm hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-right">
                         Developed by{' '}
                         <a 
                             href="https://almaalvarado.netlify.app/" 
@@ -112,6 +110,6 @@ export function Footer() {
                     </span>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 }

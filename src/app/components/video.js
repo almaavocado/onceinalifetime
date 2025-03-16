@@ -1,6 +1,7 @@
 'use client'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations/content'
+import { SparklesCore } from "./ui/sparkle"; 
 
 export default function VideoPage() {
     const { language } = useLanguage();
@@ -8,13 +9,14 @@ export default function VideoPage() {
 
     return (
         <div className="relative w-full min-h-screen flex flex-col justify-center items-center p-6 text-white mt-8 overflow-hidden bg-[#0F1B26]">
-            {/* Gradient Spots 
-            <div className="absolute top-0 left-0 w-48 h-40 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
-            <div className="absolute top-0 right-0 w-48 h-40 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-40 bg-pink-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
-            <div className="absolute bottom-0 right-0 w-48 h-40 bg-purple-500 opacity-50 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-6000"></div>
-
-            */}
+             <SparklesCore
+                    background="transparent"
+                    minSize={0.4}
+                    maxSize={1}
+                    particleDensity={10}
+                    className="absolute inset-0 w-full h-full pointer-events-none z-0"
+                    particleColor="#C9A0FF"
+                />
             
             <h1 className="text-xl md:text-2xl font-bold mb-4 text-center">
                 {t.title}

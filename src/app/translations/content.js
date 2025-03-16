@@ -39,7 +39,7 @@ export const translations = {
             quote2: '“Be you, Do you, Love you!”'
         },
         pricing: {
-            title: 'Pricing',
+            title: 'Packages',
             subtitle: 'Once in a Lifetime Quinceañera Packages',
             description: 'Choose the perfect package to make your event unforgettable.',
             contact: 'Contact us today for your free consultation and more details!',
@@ -61,6 +61,16 @@ export const translations = {
             title: 'About Us',
             subtitle: 'Your Creative Partners',
             description: '(OIALQ) provides families with beautiful choreographies and event coordinating for their once-in-a-lifetime celebration. Working from beginning to end to create a magical experience and memories. All while empowering one Quinceañera at a time with dance, confidence, self-love, and teamwork helping her celebrate becoming a young, strong woman.'
+        },
+        contact: {
+            title: 'Get in Touch',
+            subtitle: 'Have questions or ready to plan your dream Quinceañera? Send us a message!',
+            form: {
+                name: 'Your Name',
+                email: 'Your Email',
+                message: 'Your Message',
+            },
+            submit: 'Send Message'
         }
     },
     es: {
@@ -99,10 +109,11 @@ export const translations = {
             paragraph1: 'Desde bailar "La Quebradora" cuando era pequeño hasta competir en equipos de baile en la preparatoria, el baile siempre ha sido mi pasión. Mientras estudiaba psicología en la universidad, un momento crucial cambió mi camino: cuando me ofrecí a coreografiar la quinceañera de mi prima. Ver cómo el baile podía transformar la confianza y crear momentos inolvidables reveló mi verdadera vocación.',
             paragraph2: 'Lo que comenzó como una forma de ayudar a familiares y amigos rápidamente se convirtió en una misión. Descubrí que las quinceañeras ofrecen la mezcla perfecta de baile, cultura y empoderamiento juvenil, ayudando a los jóvenes a ganar confianza mientras abrazan la tradición.',
             paragraph3: 'En Once in a Lifetime Quinceañera, no solo creamos bailes, creamos memorias para toda la vida y empoderamos a los jóvenes para celebrar quienes son con orgullo y alegría.',
-            signature: '– Lazaro Trinidad'
+            signature: '– Lazaro Trinidad',
+            quote2: '“Be you, Do you, Love you!”'
         },
         pricing: {
-            title: 'Precios',
+            title: 'Paquetes',
             subtitle: 'Paquetes de Once in a Lifetime Quinceañera',
             description: 'Elige el paquete perfecto para hacer tu evento inolvidable.',
             contact: '¡Contáctanos hoy para tu consulta gratuita y más detalles!',
@@ -118,12 +129,22 @@ export const translations = {
             title: 'Celebra tu Quinceañera con Coreografía Espectacular',
             subtitle: 'Haz de tu gran día algo inolvidable con bailes impresionantes hechos especialmente para ti.',
             cta: 'Reserva una Consulta Gratuita',
-            testimonial: '¡La coreografía hizo mi Quinceañera mágica! Me sentí segura y hermosa.'
+            testimonial: '"¡La coreografía hizo mi Quinceañera mágica! Me sentí segura y hermosa."'
         },
         videoComponent: {
             title: 'Sobre Nosotros',
             subtitle: 'Tus Socios Creativos',
             description: '(OIALQ) ofrece a las familias hermosas coreografías y coordinación de eventos para su celebración única en la vida. Trabajando de principio a fin para crear una experiencia mágica y recuerdos inolvidables. Todo mientras empoderamos a una Quinceañera a la vez con baile, confianza, amor propio y trabajo en equipo, ayudándola a celebrar su transformación en una joven fuerte.'
+        },
+        contact: {
+            title: 'Contáctanos para más información',
+            subtitle: '¿Tienes preguntas o estás lista para planear la fiesta de tus sueños? ¡Envíanos un mensaje!',
+            form: {
+                name: 'Tu Nombre',
+                email: 'Tu Correo Electrónico',
+                message: 'Tu Mensaje',
+            },
+            submit: 'Enviar Mensaje'
         }
     }
 };

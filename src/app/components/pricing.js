@@ -70,7 +70,7 @@ export default function Pricing() {
   const t = translations[language].pricing;
 
   return (
-    <div id="pricing" className="relative isolate bg-[#0F1B26] px-6 py-8 sm:py-10 lg:px-8">
+    <div id="packages" className="relative isolate bg-[#0F1B26] px-6 py-8 sm:py-10 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
         <h2 className="text-base font-semibold text-yellow-600">{t.title}</h2>
         <p className="mt-2 text-4xl text-white font-bold tracking-tight sm:text-5xl">

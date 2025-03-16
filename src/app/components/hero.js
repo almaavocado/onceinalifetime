@@ -6,12 +6,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useLanguage } from '../context/LanguageContext'
 import { translations } from '../translations/content'
 import { LanguageIcon } from '@heroicons/react/24/outline'
+import { SparklesCore } from "./ui/sparkle"; // Ensure you have the correct path to your SparklesCore component
 
 const navigation = [
     { name: 'home', href: '#home' },
     { name: 'services', href: '#services' },
     { name: 'about', href: '#about' },
-    { name: 'pricing', href: '#pricing' },
+    { name: 'pricing', href: '#packages' },
     { name: 'contact', href: '#contact' },
 ];
 
@@ -173,7 +174,16 @@ export default function Hero() {
             </header>
 
             <div className="relative isolate px-6 pt-24 lg:px-8 flex flex-col justify-center items-center min-h-screen">
-                <div className="text-center text-white p-10 rounded-lg">
+                {/* SparklesCore component */}
+                <SparklesCore
+                    background="transparent"
+                    minSize={0.4}
+                    maxSize={1}
+                    particleDensity={50}
+                    className="absolute inset-0 w-full h-full pointer-events-none z-0"
+                    particleColor="#C9A0FF"
+                />
+                <div className="relative z-10 text-center text-white p-10 rounded-lg">
                     <div className="flex justify-center">
                         <img 
                             alt="" 
@@ -186,11 +196,12 @@ export default function Hero() {
                     </p>
                     <div className="mt-10">
                         <a
-                            href="#pricing"
+                            href="#packages"
                             className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]"
                         >
                             {t.hero.cta}
                         </a>
+                        
                     </div>
                 </div>
             </div>
@@ -198,4 +209,3 @@ export default function Hero() {
         </div>
     );
 }
-

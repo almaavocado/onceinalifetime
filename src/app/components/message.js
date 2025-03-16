@@ -11,13 +11,13 @@ export default function FounderMessage() {
   return (
     <section className="relative px-6 lg:px-24 bg-[#0F1B26] overflow-hidden">
       {/* Core component */}
-              <SparklesCore
-              background="transparent"
-              minSize={0.4}
-              maxSize={1}
-              particleDensity={50}
-              className="absolute inset-0 w-full h-full pointer-events-none z-0"
-              particleColor="#C9A0FF" />
+      <SparklesCore
+      background="transparent"
+      minSize={0.4}
+      maxSize={1}
+      particleDensity={25}
+      className="absolute inset-0 w-full h-full pointer-events-none z-0"
+      particleColor="#C9A0FF" />
            
 
       {/* Smooth Transition Divider */}
