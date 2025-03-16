@@ -97,7 +97,7 @@ export function Footer() {
                     <span className="text-sm text-gray-500 hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-left">
                         © {new Date().getFullYear()} <a href="#home" className="hover:underline">Once in a Lifetime Quinceañera</a>
                     </span>
-                    <span className="text-sm hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-right">
+                    <span className="text-sm text-gray-400 hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-right">
                         Developed by{' '}
                         <a 
                             href="https://almaalvarado.netlify.app/" 

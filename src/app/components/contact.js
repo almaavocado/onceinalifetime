@@ -33,18 +33,18 @@ export default function ContactMe() {
           <form className="mt-6 space-y-4">
             <input
               type="text"
-              placeholder={cont.name}
+              placeholder={cont.form.name}
               className="w-full p-3 bg-gray-800 rounded-lg border border-gray-600 focus:ring-[#FFC107] focus:border-[#FFC107]"
               required
             />
             <input
               type="email"
-              placeholder={cont.email}
+              placeholder={cont.form.email}
               className="w-full p-3 bg-gray-800 rounded-lg border border-gray-600 focus:ring-[#FFC107] focus:border-[#FFC107]"
               required
             />
             <textarea
-              placeholder={cont.message}
+              placeholder={cont.form.message}
               rows="4"
               className="w-full p-3 bg-gray-800 rounded-lg border border-gray-600 focus:ring-[#FFC107] focus:border-[#FFC107]"
               required
