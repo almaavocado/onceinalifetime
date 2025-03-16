@@ -36,8 +36,15 @@ export default function VideoPage() {
             </div>
 
             <a href="mailto:laztrinidad87@gmail.com" className="mt-6 px-6 py-3">
-                <button className="rounded-md bg-gradient-to-r from-[#AE8625] to-[#D2AC47] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gradient-to-r hover:from-[#4C0F30] hover:to-[#7F1D2A]">
-                    {t.cta}
+                <button
+                type="submit"
+                className="group w-full rounded-lg relative grid overflow-hidden rounded-full px-3.5 py-2.5 text-sm font-semibold shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 hover:opacity-90 transition"
+                >
+                    <span>
+                        <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+                    </span>
+                    <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-800 w-full bg-gradient-to-r from-[#AE8625] to-[#D2AC47] py-3 text-center rounded-lg hover:opacity-90 transition" />
+                    <span className="z-10 text-sm font-semibold">{t.cta}</span>
                 </button>
             </a>
 

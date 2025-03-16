@@ -4,7 +4,7 @@ export const translations = {
             home: 'Home',
             services: 'Services',
             about: 'About',
-            pricing: 'Pricing',
+            pricing: 'Packages',
             contact: 'Contact'
         },
         hero: {
@@ -55,7 +55,7 @@ export const translations = {
             title: 'Celebrate Your Quinceañera with Stunning Choreography',
             subtitle: 'Make your big day unforgettable with breathtaking dances tailored just for you.',
             cta: 'Book a Free Consultation',
-            testimonial: 'The choreography made my Quinceañera magical! I felt confident and beautiful.'
+            testimonial: '"The choreography made my Quinceañera magical! I felt confident and beautiful."'
         },
         videoComponent: {
             title: 'About Us',
@@ -68,7 +68,7 @@ export const translations = {
             home: 'Inicio',
             services: 'Servicios',
             about: 'Nosotros',
-            pricing: 'Precios',
+            pricing: 'Paquetes',
             contact: 'Contacto'
         },
         hero: {
