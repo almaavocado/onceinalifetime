@@ -37,7 +37,7 @@ export default function VideoPage() {
                 </video>
             </div>
 
-            <a href="mailto:laztrinidad87@gmail.com" className="mt-6 px-6 py-3">
+            <a href="mailto:oialq.15@gmail.com" className="mt-6 px-6 py-3">
                 <button
                 type="submit"
                 className="group w-full rounded-lg relative grid overflow-hidden rounded-full px-3.5 py-2.5 text-sm font-semibold shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 hover:opacity-90 transition"
