@@ -95,7 +95,7 @@ export function Footer() {
                 {/* Copyright and Credits - Improved Layout */}
                 <div className="sm:flex sm:items-center sm:justify-between flex-wrap gap-4 mb-10">
                     <span className="text-sm text-gray-500 hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-left">
-                        © {new Date().getFullYear()} <a href="#home" className="hover:underline">Once in a Lifetime Quinceañera</a>
+                        © {new Date().getFullYear()} <a href="#home" className="hover:underline">Once in a Lifetime Quinceañera | Los Angeles, CA</a>
                     </span>
                     <span className="text-sm text-gray-400 hover:text-[#926AA5] transition-colors duration-200 block text-center sm:text-right">
                         Developed by{' '}
