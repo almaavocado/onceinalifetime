@@ -65,17 +65,19 @@ export default function ContactMe() {
 
         {/* Map Section */}
         <div className="relative mt-8 w-full h-80 rounded-lg overflow-hidden flex justify-center">
-          {/* Map */}
-          <iframe
-            title="OIALQ Location"
-            width="100%"
-            height="100%"
-            loading="lazy"
-            className="relative rounded-lg z-10"
-            src="https://maps.google.com/maps?q=Los+Angeles,CA&z=13&output=embed"
-            allowFullScreen
-          ></iframe>
-        </div>
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-800">
+            <span className="text-white">Loading map...</span>
+              </div>
+              <iframe
+                title="OIALQ Location"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                className="relative rounded-lg z-10"
+                src="https://maps.google.com/maps?q=Los+Angeles,CA&z=13&output=embed"
+                allowFullScreen
+            ></iframe>
+          </div>
       </div>
     </div>
   );
