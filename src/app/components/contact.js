@@ -26,7 +26,7 @@ export default function ContactMe() {
         (result) => {
           console.log('Email sent successfully:', result.text);
           setSuccessMessage('Your message has been sent successfully!'); // Set success message
-          e.target.reset(); // Reset the form after submission
+          e.target.reset(); 
         },
         (error) => {
           console.error('Error sending email:', error.text);
