@@ -3,8 +3,8 @@
 import Hero from "./components/hero";
 import Pricing from "./components/pricing";
 import Services from "./components/services";
+import About from "./components/about";
 import FounderMessage from "./components/message";
-import VideoTextComponent from "./components/videoComponent";
 import Video from "./components/video";
 import ContactMe from "./components/contact";
 import { Footer } from "./components/footer";
@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
         <Video />
         <Services />
-        <VideoTextComponent />
+        <About />
         <FounderMessage />
         <Pricing />
         <ContactMe />

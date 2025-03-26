@@ -5,9 +5,10 @@ import { translations } from '../translations/content'
 export default function VideoHero() {
     const { language } = useLanguage();
     const t = translations[language].videoComponent;
+    const p = translations[language].pricing;
 
     return (
-        <div id="about" className="relative h-[700px] w-full">
+        <div id="about" className="relative h-[300px] w-full">
             <video 
                 className="absolute inset-0 w-full h-full object-cover blur-sm" 
                 autoPlay 
@@ -23,12 +24,12 @@ export default function VideoHero() {
             </video>
 
             <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white text-center p-6">
-                <p className="text-base font-semibold text-yellow-600">{t.title}</p>
+                <p className="text-base font-semibold text-yellow-600">{p.title}</p>
                 <h1 className="mt-2 text-2xl font-bold tracking-tight text-gray-200 sm:text-4xl drop-shadow-lg">
-                    {t.subtitle}
+                    {p.subtitle}
                 </h1>
                 <p className="mt-6 text-lg leading-7 sm:text-xl max-w-2xl mx-auto px-4 py-2 rounded-md drop-shadow-md">
-                    {t.description}
+                    {p.description}
                 </p>
             </div>
     

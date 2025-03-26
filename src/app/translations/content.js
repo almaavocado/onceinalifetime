@@ -21,7 +21,7 @@ export const translations = {
                 },
                 coordination: {
                     name: 'Coordination',
-                    description: 'Producing and directing to ensure each part of the program runs smoothly, from el brindis to sound and lighting.'
+                    description: 'Directing and giving instructions to ensure each part of the program runs smoothly, from coronación to última muñeca. “Producing and directing to ensure each part of the program runs smoothly, from el brindis to sound and lighting.”'
                 },
                 additional: {
                     name: 'Additional Services',
@@ -32,9 +32,11 @@ export const translations = {
         message: {
             title: 'A Message From Our Founder',
             quote: 'Dance has been the heartbeat of my life since childhood.',
-            paragraph1: 'From twirling to "La Quebradora" as a toddler to competing on high school dance teams, dance has always been my passion. While studying psychology in college, a pivotal moment changed my path—when I stepped in to choreograph my cousins quinceañera. Seeing how dance could transform confidence and create unforgettable moments revealed my true calling.',
-            paragraph2: 'What started as a way to help family and friends quickly became a mission. I discovered that quinceañeras offer the perfect blend of dance, culture, and youth empowerment—helping young people step into their confidence while embracing tradition.',
-            paragraph3: 'At Once in a Lifetime Quinceañera, we dont just create dances—we create lifelong memories and empower young people to celebrate who they are with pride and joy.',
+            paragraph1: 'From twirling to "La Quebradora" as a toddler to competing on high school dance teams and dancing for the Ballet Folklorico Mixteco East Los Angeles, dance has always been my passion. While studying psychology in college, I worked for Mar Vista Family Center as the Youth Leadership Coordinator where I cultivated my interest in empowering youth. During this time a pivotal moment changed my path—when I stepped in at the last minute to choreograph my cousin\'s quinceañera. Seeing how dance could transform confidence and create unforgettable moments revealed my true calling.',
+            paragraph2: 'What started as a way to help my tios with my cousins quinceaneras and youth at the center quickly became a mission. I discovered that quinceañeras offer the perfect blend of dance, culture, and youth empowerment.',
+            paragraph3: 'My 10 years working at MVFC helped me acquire skills that have been essential to work with quinceaneras and their corte de honor. I understood that this age is one of the most important years in the development of self love, confidence, and teamwork. Adapting these skills has helped me create a space where youth feel safe to express themselves through dance all while having fun and developing skills of responsibility and work ethic. I truly enjoy what I do. At Once in a Lifetime Quinceañera, I don’t just celebrate a tradition—I create lifelong memories and empower young people to become the best version of themselves with pride and joy.',
+            paragraph4: 'In my free time I enjoy focusing on my mind, body, and spirit. I enjoy cooking with clean whole food ingredients. I love authentic food; Thai and Mexican food being my favorite. I love the outdoors and hiking into national parks, Yosemite and Utah are my favorite places to visit. I love going to the “sonidero bailes” and EDM festivals dancing the night away. I am a total fan of Grey’s Anatomy, honestly I’ve rewatched every season 4x and counting. Spending time with my close circle of friends and family feels my heart. Healing my traumas has become a journey that has allowed me to build a better relationship with myself, my family, and God. ',
+            paragraph5: 'My goal is to be the best version of myself and share it with the world. ',
             signature: '– Lazaro Trinidad',
             quote2: '“Be you, Do you, Love you!”'
         },
@@ -59,7 +61,7 @@ export const translations = {
         },
         videoComponent: {
             title: 'About Us',
-            subtitle: 'Your Creative Partners',
+            subtitle: 'Where Tradition Meets Empowerment',
             description: '(OIALQ) provides families with beautiful choreographies and event coordinating for their once-in-a-lifetime celebration. Working from beginning to end to create a magical experience and memories. All while empowering one Quinceañera at a time with dance, confidence, self-love, and teamwork helping her celebrate becoming a young, strong woman.'
         },
         contact: {
